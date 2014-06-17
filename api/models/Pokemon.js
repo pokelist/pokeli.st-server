@@ -185,6 +185,12 @@ module.exports = {
         },
         nicknameable: {
             type: "BOOL"
+        },
+        nature: {
+            type: "INTEGER"
+        },
+        pokeball: {
+            type: "INTEGER"
         }
     }
 };
