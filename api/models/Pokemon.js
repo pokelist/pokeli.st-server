@@ -157,7 +157,7 @@ module.exports = {
             max: "65536"
         },
         owner: {
-            type: "INTEGER"
+            model: "User"
         },
         ability: {
             type: "INTEGER",
