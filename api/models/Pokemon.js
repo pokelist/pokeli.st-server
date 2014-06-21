@@ -8,10 +8,10 @@
 
 module.exports = {
     attributes: {
-        num: {
+        dexNum: {
             type: "INTEGER",
             min: "1",
-            max: "718"
+            max: "719"
         },
         move1: {
             type: "INTEGER",
@@ -191,6 +191,21 @@ module.exports = {
         },
         pokeball: {
             type: "INTEGER"
+        },
+        pokerus: {
+            type: "BOOL"
+        },
+        private: {
+            type: "BOOL",
+            required: true
+        },
+        manual: {
+            type: "BOOL",
+            required: true
+        },
+
+        encounter: {
+            model: "encounter"
         }
     }
 };
