@@ -6,19 +6,22 @@
 */
 
 module.exports = {
+    scheme: true,
 
     attributes: {
         username: {
             type: "STRING",
-            required: true
+            required: true,
+            unique: true
         },
         email: {
             type: "EMAIL",
-            required: true
+            required: true,
+            unique: true
         },
-        password: {
-            type: "STRING",
-            required: true
+        passports: {
+            colllection: "Passport",
+            via: "user"
         },
         pokemon: {
             collection: "Pokemon",
