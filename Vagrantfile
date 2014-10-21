@@ -114,6 +114,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   
   config.vm.provision :shell, path: "bootstrap.sh"
 
+  config.vm "virtualbox" do |v|
+    v.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root", "1"]
+  end
   # If you're using the Opscode platform, your validator client is
   # ORGNAME-validator, replacing ORGNAME with your organization name.
   #
