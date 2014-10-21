@@ -1,7 +1,6 @@
 module.exports = function (grunt) {
 	grunt.registerTask('build', [
-		'compileAssets',
-		'linkAssetsBuild',
+		'shell:buildFrontendDev',
 		'clean:build',
 		'copy:build'
 	]);

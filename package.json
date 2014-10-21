@@ -37,5 +37,8 @@
     "url": "git://github.com/Cu3PO42/pokeli.st.git"
   },
   "author": "Cu3PO42",
-  "license": "See LICENSE.md"
+  "license": "See LICENSE.md",
+  "devDependencies": {
+    "grunt-shell": "^1.1.1"
+  }
 }

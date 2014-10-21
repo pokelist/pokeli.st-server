@@ -1,3 +1,7 @@
 module.exports = function (grunt) {
-	grunt.registerTask('default', ['compileAssets', 'linkAssets',  'watch']);
+	grunt.registerTask('default', [
+		'shell:buildFrontendDev',
+		'clean:dev',
+		'copy:dev'
+	]);
 };
