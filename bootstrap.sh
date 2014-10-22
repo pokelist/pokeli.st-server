@@ -1,7 +1,6 @@
 #!/usr/bin/env sh
 yum update
-yum install wget git
-wget https://raw.githubusercontent.com/isaacs/nave/master/nave.sh -O /usr/bin/nave
-chmod +x /usr/bin/nave
-nave usemain latest
+yum install wget git curl
+curl -sL https://rpm.nodesource.com/setup | bash -
+yum install -y nodejs gcc-c++ make
 npm install --global grunt-cli gulp
