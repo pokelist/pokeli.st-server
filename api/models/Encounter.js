@@ -12,22 +12,22 @@ module.exports = {
   	
     location: {
         type: 'STRING',
-	required: true
+	    required: true
     },
     fateful: {
-        type: 'BOOLEAN',
+        type: 'BOOL',
         required: true
     },
     egg: {
-        type: 'BOOLEAN,
-        required: true'
+        type: 'BOOL',
+        required: true
     },
     eggLocation: {
         type: 'STRING'
     },
     level: {
         type: 'INT',
-        required: true
+        required: true,
         min: '1',
         max: '100'
     },
