@@ -1,6 +1,6 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
-if [-d "./assets" && "$(ls -A ./assets)"]
+if [ -d "./assets" ] & [ ! "$(ls -A ./assets)" ]; then
 	git submodule update --init
 fi
 
