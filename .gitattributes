@@ -1,0 +1,10 @@
+* text=auto
+
+*.js text
+*.sh text
+*.css text
+*. html text
+*.hbs text
+
+*.png binary
+*.jpg binary
