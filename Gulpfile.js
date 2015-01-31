@@ -21,9 +21,14 @@ if (!fs.existsSync(assets) || (fs.readdirSync(assets) == []))
     console.log('Installing npm modules for the frontend.');
     exec('npm install');
     console.log('Installed npm modules for the frontend.');
-    var config = require('./assets/gulp/config');
-    config.destBase = path.join(__dirname, '.tmp', 'public');
     cd(cwd);
 }
 
-require('./assets/Gulpfile');
+var task = process.arv[2].charAt(0) === '-' ? 'default' : process.argv[2];
+
+gulp.task(task, function() {
+    var cwd = pwd();
+    cd(assets);
+    exec('gulp #{task} --dest=../.tmp/public');
+    cd(cwd);
+});
