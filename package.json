@@ -34,7 +34,7 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/Cu3PO42/pokeli.st.git"
+    "url": "git://github.com/pokelist/pokeli.st-server.git"
   },
   "author": "Cu3PO42",
   "license": "See LICENSE.md",

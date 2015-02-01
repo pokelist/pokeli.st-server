@@ -24,11 +24,11 @@ if (!fs.existsSync(assets) || (fs.readdirSync(assets) == []))
     cd(cwd);
 }
 
-var task = process.arv[2].charAt(0) === '-' ? 'default' : process.argv[2];
+var task = process.argv.length < 3 || process.argv[2].charAt(0) === '-' ? 'default' : process.argv[2];
 
 gulp.task(task, function() {
     var cwd = pwd();
     cd(assets);
-    exec('gulp #{task} --dest=../.tmp/public');
+    exec('gulp ' + task + ' --dest=../.tmp/public');
     cd(cwd);
 });
